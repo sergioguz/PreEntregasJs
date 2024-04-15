@@ -1,3 +1,5 @@
+//Consulta de precios-PreEntrega1
+
 function consultaprecios(){
 
     const precio_arroz= 25;
