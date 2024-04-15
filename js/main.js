@@ -26,6 +26,6 @@ function consultaprecios(){
 }
 
 
-consultaprecios()
+consultaprecios();
 
 
