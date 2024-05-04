@@ -103,7 +103,7 @@ function Consultarprecios(){
                 prompt('Ingresa el producto que quieres'),
                 prompt('Ingresa el precio'),
                 prompt('Ingresa el supermercado al que compraste')))
-    
+                alert("Favor visualizar la consola para los ver los resultados");
                 console.log(productos);
     
             }else{
