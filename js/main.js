@@ -71,7 +71,7 @@ function Consultarprecios(){
                             ///console.log(busquedalista);
                         }else {
                             ///filtro por el numero de opcion 
-                            
+                           
                             const resultadoconsulta= productos.filter(el=>busquedalista.includes(el.id));
                                     //Utilizo reduce para sumarizar
                                 const sumasPorSupermercado = resultadoconsulta.reduce((acum, producto) => {
@@ -88,9 +88,10 @@ function Consultarprecios(){
                                 const paresSupermercadoPrecio = Object.entries(sumasPorSupermercado);
                                     //Me organiza los de menor a mayor los precios
                                 paresSupermercadoPrecio.sort((a, b) => a[1] - b[1]);
+                                alert("Favor visualizar la consola para los ver los resultados");
                                 console.log('Aqui la lista de precios por supermercados al', fechaUTC);
                                 console.log(paresSupermercadoPrecio);
-                                alert("Favor visualizar la consola para los ver los resultados");
+                                
                             break;
                             
                         }
