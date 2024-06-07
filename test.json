@@ -1,0 +1,84 @@
+{
+    "id": 199,
+    "name": "SOPITA DOÑA GALLINA",
+    "unit": "CAJA DE 12 UDS",
+    "img": "SOPITA DONA GALLINA CAJA DE 12 UDS.jpeg",
+    "category": "Otros",
+    "subCategory": "Otros",
+    "inMarketsSpecial": [
+        "Aprezio",
+        "Bravo",
+        "Carrefour",
+        "Jumbo",
+        "La Cadena",
+        "La Sirena",
+        "Nacional",
+        "Ole",
+        "Plaza Lama",
+        "Pricesmart",
+        "Unidos",
+        "La Sirena Market"
+    ],
+    "inFront": false,
+    "marketTypes": [
+        1
+    ],
+    "priceAverages": [
+        99.06
+    ],
+    "precios" : [
+        {
+            "type": 1,
+            "markets": [
+                {
+                    "name": "Aprezio",
+                    "price": 105
+                },
+                {
+                    "name": "Bravo",
+                    "price": 104
+                },
+                {
+                    "name": "Carrefour",
+                    "price": 79.95
+                },
+                {
+                    "name": "Jumbo",
+                    "price": 103.95
+                },
+                {
+                    "name": "La Cadena",
+                    "price": 98
+                },
+                {
+                    "name": "La Sirena",
+                    "price": 106
+                },
+                {
+                    "name": "Nacional",
+                    "price": 103.95
+                },
+                {
+                    "name": "Ole",
+                    "price": 97
+                },
+                {
+                    "name": "Plaza Lama",
+                    "price": 109
+                },
+                {
+                    "name": "Pricesmart",
+                    "price": 79.92
+                },
+                {
+                    "name": "Unidos",
+                    "price": 95.95
+                },
+                {
+                    "name": "La Sirena Market",
+                    "price": 106
+                }
+            ]
+        }
+    ]
+}

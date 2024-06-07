@@ -1,0 +1,332 @@
+/* Estilo de la pagina Select Prices */
+/* Estilo GRID */
+.body-selectprices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+  }
+  .body-selectprices header {
+    background-color: white;
+  }
+  .body-selectprices header #navbarNav .nav-link {
+    color: #1c77c3 !important;
+  }
+  .body-selectprices header nav ul a:active {
+    color: gray;
+  }
+  .body-selectprices header .collapse .navbar-collapse .d-flex .justify-content-between {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .body-selectprices header nav {
+    width: 100%;
+    font-size: small;
+    font-weight: 580;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: unset;
+    position: fixed;
+    padding: 12px 10px;
+    background-color: #1c77c3;
+  }
+  .body-selectprices header nav img {
+    width: 50;
+    display: flex;
+    margin-left: 2%;
+  }
+  .body-selectprices header .image-header {
+    width: 50;
+    margin-left: 2%;
+  }
+  .body-selectprices header nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .body-selectprices header nav ul a {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+  }
+  .body-selectprices header nav ul a:active {
+    color: gray;
+  }
+  .body-selectprices .header-menu-item1 {
+    margin-left: 10%;
+  }
+  .body-selectprices .header-menu-item2 {
+    margin-right: 1.5%;
+  }
+  .body-selectprices .header-menu-item2-botton a {
+    background-color: f39237;
+    border-radius: 0.63rem;
+    border-color: #f39237 !important;
+  }
+  .body-selectprices .header-menu-item2-botton a:hover {
+    background-color: white;
+    color: #f39237;
+    border-radius: 0.63rem;
+    border-color: #f39237;
+  }
+  .body-selectprices main {
+    background-color: white;
+    grid-area: main;
+  }
+  .body-selectprices footer {
+    background-color: gray;
+    grid-area: footer;
+    margin-top: 10%;
+    height: 40%;
+  }
+  .body-selectprices footer nav {
+    height: 100% !important;
+    width: 100%;
+    font-size: small;
+    font-weight: 580;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1% !important;
+    position: sticky;
+    justify-content: flex-start !important;
+    background-color: 444444;
+  }
+  
+  /* Main Selectprices */
+  .main-selectprices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .main-selectprices .h-Titules {
+    /* Estilo Post Header SelectPrices */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: gray;
+    background-color: white;
+    grid-area: header;
+  }
+  .main-selectprices .h-Titules a {
+    width: 50;
+    margin-left: 2%;
+  }
+  .main-selectprices .h-Titules img {
+    width: 50;
+  }
+  .main-selectprices .h-Titules h2 {
+    margin-left: 32%;
+    font-size: 20px !important;
+  }
+  .main-selectprices .form-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+  }
+  .main-selectprices .form-search input {
+    border-radius: 0.63rem;
+    border-style: solid;
+    padding: 10px 35px;
+    font-style: italic;
+    font-size: 15px;
+  }
+  
+  /* Items de buscar */
+  .main-selectprices-items {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px !important;
+    flex-wrap: wrap;
+  }
+  
+  .selectprices-item1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 31%;
+    margin: 1%;
+    font-size: 10px !important;
+  }
+  
+  .selectprices-item1-image {
+    width: 40%;
+  }
+  .selectprices-item1-image img {
+    width: 100%;
+    border-radius: 0.63rem;
+    object-fit: cover;
+  }
+  
+  .selectprices-item-1-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+  }
+  .selectprices-item-1-content h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+  .selectprices-item-1-content p {
+    margin-top: -5%;
+  }
+  .selectprices-item-1-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  .selectprices-item-1-content form select {
+    border-radius: 0.63rem;
+    border-style: solid;
+    padding: 3px 10px;
+    width: 100%;
+    margin-bottom: unset;
+    font-size: 11px;
+    margin-top: -5%;
+  }
+  .selectprices-item-1-content form input[type=number] {
+    width: 30%;
+    padding: 2px;
+    border-radius: 0.63rem;
+    margin-bottom: 3%;
+    border-style: ridge;
+    font-size: 10px;
+    margin-top: 3%;
+  }
+  .selectprices-item-1-content form input[type=button] {
+    width: 50%;
+    background-color: f39237;
+    color: white;
+    border-style: none;
+    padding: 4px;
+    border-radius: 0.63rem;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .selectprices-item-1-content form input[type=submit]:hover {
+    width: 50%;
+    background-color: white;
+    border-color: f39237;
+    color: f39237;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+    border-radius: 0.63rem;
+    font-size: 10px;
+  }
+  
+  .main-selectprices-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+  }
+  .main-selectprices-btn button {
+    background-color: f39237;
+    color: white;
+    border-style: none;
+    padding: 12px;
+    border-radius: 0.63rem;
+    font-size: 25px;
+    font-weight: 400;
+    width: fit-content;
+  }
+  .main-selectprices-btn button:hover {
+    color: f39237;
+    background-color: white;
+    border-style: solid;
+    border-color: #f39237;
+    cursor: pointer;
+  }
+
+  /*Modal para el carrito en select*/
+  .cart-icon {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 1000; /* Asegúrate de que el ícono es visible siempre */
+  }
+  
+  /* Estilizar el contenido del modal */
+.modal-content {
+  background-color: #1c77c3;/* Azul Bootstrap */
+  color: white; /* Texto blanco */
+}
+
+/* Estilizar el encabezado del modal, si lo deseas diferenciado */
+.modal-header {
+  background-color: #1c77c3; /* Un tono de azul más oscuro */
+  color: white;
+}
+
+/* Si deseas cambiar también el fondo del body y footer del modal */
+.modal-body{
+  background-color: #1c77c3;
+  color: white;
+}
+
+.modal-footer {
+  background-color: #1c77c3;
+  color: white;
+}
+
+
+#compareButton{
+  background-color: f39237;
+    border-radius: 0.63rem;
+    border-color: #f39237 !important;
+    color: white;
+    font-family: Montserrat;
+}
+
+
+/* Para que se muestre bien el collapse en la barra header  */
+@media (max-width: 768px) {
+
+  .body-selectprices .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    background-color: white !important;
+    padding: unset !important;
+    border-radius: 1.15rem;
+  }
+  /* Ensuring that the menu is not displayed by default */
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  /* This will show the menu when the navbar is toggled */
+  .navbar-collapse.collapse.show {
+    display: flex !important;
+  }
+  .navbar-nav #navbarNav:nth-child(2) {
+    margin-top: 5% !important;
+  }
+  
+
+  
+  .main-selectprices .h-Titules {
+        /* Estilo Post Header SelectPrices */
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+        
+      }
+
+  .h-Titules h2{
+    display: flex;
+    
+    margin-left: 0% !important;
+  }
+
+  .body-selectprices header nav {
+    position: static; /* O simplemente elimina esta línea si está configurado como fixed o absolute */
+    width: 100%;
+    background-color: #1c77c3;
+}
+
+}

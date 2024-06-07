@@ -1,21 +1,127 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Funciones</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/Lista de Compra Baja.png" type="image/x-icon">
+  <meta name="description" content="Descubre dónde comprar más barato con Tu Mejor Lista de Compra. Compara precios en supermercados de República Dominicana y ahorra en cada compra. ¡Empieza a ahorrar ahora!">
+  <meta name="keywords" content="precios bajos,supermercados, mercados, colmados,ahorro, comparador de precios, barato">
+  <title>Compara tu lista|Tu Mejor Lista de Precios</title>
 </head>
-<body>
+<body class="body-selectprices"> 
+  <header style="background-color: unset;">
+    <div class="container-fluid d-flex">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white !important">
+                            <div class="container-fluid d-flex flex-row">
+                              <a class="navbar-brand" href="../index.html"><img src="./images/Lista de Compra Baja.png" alt=""></a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                                <ul class="navbar-nav ">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/selectprices.html">Compara tu Lista</a>
+                                  </li>
+                                  <li class="nav-item text-white">
+                                    <a class="nav-link " href="../pages/selectprices.html">Chatea con la App</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../pages/selectprices.html">Escanea tu factura</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../pages/login.html">Contactanos</a>
+                                  </li>
+                                  <!-- <li class="nav-item">
+                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                  </li> -->
+                                </ul>
+                                <ul class="navbar-nav ">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/login.html">Iniciar sesión</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/login.html"><button type="button" class="btn btn-warning text-white" style="background-color: f39237;border-color: f39237;font-weight: bold !important;font-size: 10px;">Registrate Gratis</button></a>
 
-  <div id="container"></div>
-  <div id="resumenPedido">
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav d-flex justify-content-center">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./pages/login.html">Iniciar sesión</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./pages/login.html"><button type="button" class="btn btn-warning text-white" style="background-color: f39237;font-weight: bold !important;font-size: 10px;">Registrate Gratis</button></a>
+
+                                  </li>
+                                </ul>
+                              </div> -->
+                            </div>
+                          </nav>
+        </div>     
+  </header>
+
+  <main class="main-selectprices">
+    <div class="h-Titules" >
+      <h2>Selecciona los productos que consumes</h2>
+      </div>
+
+      <form action="" class="form-search">
+        <input type="search" name="" id="search-bar" placeholder="Buscar Arroz....." autocomplete="on">
+        </form>
+
+        <div class="main-selectprices-btn">
+          <button id="compararButton">COMPARAR</button>
+          <!-- <a href="./compareprices.html"> <input type="submit" value="COMPARA TU LISTA"></a> -->
+    </div>
+
+    <div id="container" class="main-selectprices-items"></div>
+
+
     <h2>Resumen del Pedido</h2>
-    <ol id="listaResumen"></ol>
-    <button id="compararButton">COMPARAR</button>
+      <ol id="listaResumen"></ol>
+
     <div id = "resultadoComparacion"></div>
     <ol id="resultadoComparacionLista"></ol>
-  </div>  
-<script src="js/main.js"></script>
+
+    <!-- Ícono de Carrito con Badge para conteo de productos -->
+<div class="cart-icon">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="badge bg-secondary" id="cartCount">0</span>
+  </button>
+</div>
+
+<!-- Modal para mostrar el resumen del pedido -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Resumen del Pedido</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ol id="modalListaResumen"></ol>
+      </div>
+      <div class="modal-footer">  
+        <button type="button" class="btn btn-warning" id="compareButton">Comparar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: Montserrat;">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+  
+
     
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
