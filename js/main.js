@@ -29,9 +29,9 @@ async function crearCard() {
                 const imgDiv = document.createElement("div");
                 imgDiv.className = 'selectprices-item1-image';
                 const image = document.createElement('img');
-                // image.src = el.image; // Asegúrate de que el objeto de datos tiene la URL de la imagen
-                // image.alt = el.name;
-                // imgDiv.appendChild(image);
+                image.src = `https://preciosjustos.micm.gob.do/img_p/${el.img}`; // Asegúrate de que el objeto de datos tiene la URL de la imagen
+                image.alt = el.name;
+                imgDiv.appendChild(image);
                 
                 // Contenido de la tarjeta
                 const contentDiv = document.createElement("div");
@@ -171,7 +171,8 @@ function realizarComparacion() {
     const supermercadoArray = Object.keys(supermercadoTotales).map(name => ({
         name,
         total: supermercadoTotales[name].total,
-        products: supermercadoTotales[name].products
+        products: supermercadoTotales[name].products,
+        countProducts: Object.keys(supermercadoTotales[name].products).length
     }));
 
     // Organizar de menor a mayor el total de precio para mostrar el más barato primero
