@@ -1,6 +1,8 @@
 /* Estilo de la pagina Select Prices */
 /* Estilo GRID */
-.body-selectprices {
+
+/*El que estaba antes*/
+/* .body-selectprices {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
@@ -96,7 +98,75 @@
     position: sticky;
     justify-content: flex-start !important;
     background-color: 444444;
+  } */
+  header .collapse .navbar-collapse .d-flex .justify-content-between {
+    display: flex !important;
+    justify-content: space-between !important;
   }
+  header nav {
+    width: 100%;
+    font-size: small;
+    font-weight: 580;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    position: fixed;
+    padding: 12px 10px;
+    background-color: #1c77c3;
+  }
+  header nav img {
+    width: 50;
+    display: flex;
+    margin-left: 2%;
+  }
+  header .image-header {
+    width: 50;
+    margin-left: 2%;
+  }
+  header nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul a {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+  }
+  header nav ul a:active {
+    color: gray;
+  }
+  
+  .header-menu-item1 {
+    margin-left: 10%;
+  }
+  
+  .header-menu-item2 {
+    margin-right: 1.5%;
+  }
+  
+  .header-menu-item2-botton a {
+    background-color: f39237;
+    border-radius: 0.63rem;
+    border-color: #f39237 !important;
+  }
+  
+  .header-menu-item2-botton a:hover {
+    background-color: white;
+    color: #f39237;
+    border-radius: 0.63rem;
+    border-color: #f39237;
+  }
+  
+  body header {
+    background-color: #1c77c3;
+  }
+
   
   /* Main Selectprices */
   .main-selectprices {
@@ -249,7 +319,7 @@
     position: fixed;
     top: 100px;
     right: 20px;
-    z-index: 1000; /* Asegúrate de que el ícono es visible siempre */
+    z-index: 1000; 
   }
   
   /* Estilizar el contenido del modal */
@@ -330,3 +400,256 @@
 }
 
 }
+
+@media (max-width:480px){
+
+ /* Diseño Responsive para Mobiles de todas las paginas */
+ .navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  background-color: 444444 !important;
+  padding: unset !important;
+  border-radius: 1.15rem;
+}
+/* Ensuring that the menu is not displayed by default */
+.navbar-collapse.collapse {
+  display: none !important;
+}
+/* This will show the menu when the navbar is toggled */
+.navbar-collapse.collapse.show {
+  display: flex !important;
+}
+.navbar-nav #navbarNav:nth-child(2) {
+  margin-top: 5% !important;
+}
+.col-12 .col-lg-6 .d-flex .flex-column .justify-content-center .align-items-center {
+  display: unset !important;
+  align-items: unset !important;
+}
+.text-center {
+  font-size: 15px !important;
+  width: 80% !important;
+}
+.main_h1_tittlindext {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 28px !important;
+  width: 380px !important;
+}
+#seccionIndexTest1 .btn.btn-warning.text-white {
+  font-size: 15px !important;
+}
+#seccionIndexTest1 .row.justify-content-start {
+  display: flex;
+  justify-content: center !important;
+}
+#seccionIndexTest1 .col-12.col-lg-6 .img-fluid {
+  width: 80%;
+  border-radius: 1.2rem;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+/* secctionII Index*/
+#seccionIndexTest2 .main_h1_tittlindext {
+  width: 350px !important;
+  font-size: 28px !important;
+  margin-top: 10% !important;
+}
+#seccionIndexTest2 h3 {
+  font-weight: bolder !important;
+  width: 100% !important;
+  font-size: 32px !important;
+}
+#seccionIndexTest2 p {
+  width: 300px !important;
+  font-size: 18px !important;
+}
+#seccionIndexTest2 .img-fluid {
+  width: 60% !important;
+  border-radius: 0.8rem;
+  margin-top: -3%;
+}
+#seccionIndexTest2 .container-fluid.d-flex {
+  display: flex !important;
+  flex-direction: column !important;
+}
+#seccionIndexTest2 .container-fluid.d-flex {
+  margin-top: 6% !important;
+}
+#seccionIndexTest3 .container-fluid {
+  margin-top: 10%;
+}
+#seccionIndexTest3 .main_h2_section3 {
+  width: 100% !important;
+  font-size: 45px !important;
+}
+#seccionIndexTest3 .text-center {
+  width: 300px !important;
+  font-size: 15px !important;
+}
+#seccionIndexTest3 .col-12.col-lg-6 {
+  display: flex !important;
+  justify-content: center !important;
+}
+#seccionIndexTest3 .img-fluid {
+  width: 70% !important;
+  border-radius: 0.8rem;
+  margin-top: -3%;
+}
+#seccionIndexTest3 .row.d-flex.flex-row-reverse {
+  margin-top: unset;
+}
+#seccionIndexTest3 .container-fluid {
+  margin-top: 15% !important;
+}
+#seccionIndexTest3 .row.d-flex.flex-row-reverse:nth-child(2) {
+  margin-top: 5% !important;
+}
+#seccionIndexTest3 .row.d-flex.flex-row-reverse:nth-child(3) {
+  margin-top: 20% !important;
+}
+#seccionIndexTest3 .btn.btn-warning.text-white {
+  margin-top: 10% !important;
+}
+#seccionIndexTest3 .btn.btn-warning.text-white {
+  font-size: 20px !important;
+}
+.main_h1_tittlindext3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 28px !important;
+  width: 380px !important;
+  margin-top: 10%;
+}
+#seccionIndexTest4 .img-fluid {
+  width: 100%;
+  margin-top: 5%;
+}
+.footer-left-text-indextest1 {
+  font-size: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aaaaaa;
+  margin-left: unset !important;
+}
+#footerIndextest1 nav {
+  height: unset !important;
+  /* height: 15%;
+  width: 100%; */
+  font-size: small;
+  font-weight: 580;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
+  position: sticky;
+  justify-content: flex-start;
+  /* background-color: black; */
+}
+.footer-left-text-indextest1 h2 {
+  font-size: 8px;
+}
+footer nav ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: unset !important;
+  font-size: 10px;
+  margin-left: unset !important;
+}
+footer nav ul a {
+  text-decoration: none;
+  color: aaaaaa;
+  background-color: unset !important;
+  /* padding: 12px; */
+}
+#footerIndextest1 nav ul li {
+  padding: 10px;
+}
+/* Diseño Responsive para pagina Select Prices */
+.body-selectprices .h-Titules {
+  display: flex;
+  justify-content: center;
+  font-size: 8px;
+  margin-bottom: 5%;
+  margin-top: 10%;
+  text-align: center;
+}
+.body-selectprices .h-Titules a {
+  width: 25;
+  margin-left: 2%;
+}
+.body-selectprices .h-Titules img {
+  width: 25;
+}
+.body-selectprices .h-Titules h2 {
+  margin-left: 5%;
+}
+/* Diseño Responsive para Mobiles SelectPrices*/
+.body-selectprices .navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  background-color: white !important;
+  padding: unset !important;
+  border-radius: 1.15rem;
+}
+/* Buscador de productos */
+.main-selectprices .form-search input {
+  border-radius: 0.63rem;
+  border-style: solid;
+  padding: 5px 30px;
+  font-style: italic;
+  font-size: 12px;
+}
+.main-selectprices-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  flex-wrap: wrap;
+}
+.selectprices-item1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  margin: 3%;
+  font-size: 12px;
+}
+.selectprices-item1-image {
+  width: 40%;
+}
+.selectprices-item-1-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-selectprices-btn input {
+  font-size: 11px;
+  font-weight: 525;
+  margin-left: 7%;
+  margin-top: 10%;
+}
+/*Diseño responsive de mobiles para pagina Compare Prices*/
+.main_tittle_comparprices h2 {
+  text-align: center;
+  width: 80%;
+}
+/* Diseño Responsive para Mobiles Header ComparePrices */
+#comparepricesPag .navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  background-color: white !important;
+  padding: unset !important;
+  border-radius: 1.15rem;
+
+  }
+
+}
+
+
